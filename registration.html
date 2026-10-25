@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | College Tech Club</title>
+    <meta name="description" content="Register to become a member of the College Tech Club.">
+    <link rel="icon" href="https://www.google.com/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Club Registration</h1>
+        <p>Become a member of our community.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Student Registration Form</h2>
+
+        <form action="#" method="post">
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName"
+                   placeholder="Enter your full name" required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9]{10}"
+                   placeholder="Enter 10-digit phone number"
+                   title="Enter a 10-digit phone number" required>
+
+            <br><br>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="BTech">B.Tech</option>
+                <option value="BCA">BCA</option>
+                <option value="BSc">B.Sc.</option>
+                <option value="Diploma">Diploma</option>
+            </select>
+
+            <br><br>
+
+            <label for="interest">Area of Interest:</label>
+            <select id="interest" name="interest" required>
+                <option value="">Select Interest</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Programming">Programming</option>
+                <option value="Robotics">Robotics</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Register</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 College Tech Club</p>
+    </footer>
+
+</body>
+</html>
